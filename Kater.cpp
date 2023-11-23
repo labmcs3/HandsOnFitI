@@ -22,7 +22,7 @@ namespace data{
 TF1 *f1;
 TF1 *f2;
 
-void chi2(int &npar, double *gin, double &f, double *par, int iflag){
+void fcn(int &npar, double *gin, double &f, double *par, int iflag){
   f=0;
 }
 

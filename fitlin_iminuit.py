@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 def f(x,par):
     return par[1]*x+par[0]
 
-def chi2(par):
+def fcn(par):
     val = 0
     for i in range(0,len(x)):
         val = val + ((y[i]-f(x[i],par))/ey[i])**2
