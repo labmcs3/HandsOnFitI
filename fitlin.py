@@ -14,6 +14,8 @@ def fcn(a,b):
 # Acquisizione dati
 x,y,ex,ey = loadtxt('pendolo.dat',usecols=(0,1,2,3),unpack=True)
 
-## Chiamo Minuit nella modalita' parametri passati tramite passaggio dei singoli parametri
-## Esplorare la funzione draw_mnmatrix per fare i contour
+## Chiamare Minuit 
+## Stampare la matrice di correlazione (correlation)
+## Esplorare la funzione draw_mncontour un contour
+## Esplorare la funzione draw_mnmatrix per fare la matrice dei contour
 
