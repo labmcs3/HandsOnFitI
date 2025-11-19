@@ -16,6 +16,3 @@ x,y,ex,ey = np.loadtxt('pendolo.dat',usecols=(0,1,2,3),unpack=True)
 
 ## Chiamare Minuit 
 ## Stampare la matrice di correlazione (correlation)
-## Esplorare la funzione draw_mncontour un contour
-## Esplorare la funzione draw_mnmatrix per fare la matrice dei contour
-
