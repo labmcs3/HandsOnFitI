@@ -3,7 +3,7 @@ namespace data{
 }
 
 double fun(const double *x,const double *par){
-  return par[0]*(*x)+par[1];
+  return par[1]*(*x)+par[0];
 }
 
 void fcn(int &npar,double *gin,double &f,double *par,int iflag){
