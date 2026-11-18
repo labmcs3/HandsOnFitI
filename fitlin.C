@@ -1,5 +1,5 @@
 namespace data{
-  vector<double>  x, y, ex, ey;
+  TGraphErrors *gr;
 }
 
 double fun(const double *x,const double *par){
@@ -14,11 +14,8 @@ void fcn(int &npar,double *gin,double &f,double *par,int iflag){
 }
 
 void fitlin(){
-  ifstream file("pendolo.dat");
-  double x,y,ex,ey;
-  while (file >> x >> y >> ex >> ey){
-    data::x.push_back(x); data::y.push_back(y); data::ex.push_back(ex); data::ey.push_back(ey);
-  }
+
+  data::gr = new TGraphErrors("pendolo.dat");
 
   // Define the minimization problem
   // TMinuit *minuit = new TMinuit(...); // numero di parametri  
