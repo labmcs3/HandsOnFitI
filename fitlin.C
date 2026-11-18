@@ -8,7 +8,7 @@ double fun(const double *x,const double *par){
 
 void fcn(int &npar,double *gin,double &f,double *par,int iflag){
   f = 0.0;
-  for (int i=0;i<data::x.size();i++){
+  for (int i=0;i<data::gr->GetN();i++){
     // Calcolo del Chi2
   }
 }
@@ -18,17 +18,16 @@ void fitlin(){
   data::gr = new TGraphErrors("pendolo.dat");
 
   // Define the minimization problem
-  // TMinuit *minuit = new TMinuit(...); // numero di parametri  
-  //  minuit->SetFCN(fcn);
-  // minuit->DefineParameter(indice,"nome",valin,step,min,max);
+  // TMinuit minuit(...); // numero di parametri  
+  // minuit.SetFCN(fcn);
+  // minuit.DefineParameter(indice,"nome",valin,step,min,max);
   // per ogni indice inserisco nome, valore iniziale, step, minimo, massimo del parametro
 
   // Minimize
-  //  minuit->Command("MIGRAD"); // Comando di minimizzazione
+  // minuit.Command("MIGRAD"); // Comando di minimizzazione
 
   // Get result
-  // minuit->GetParameter(indice,val,eval);
   // per ogni indice estraggo il valore del parametro e del suo errore
-  // minuit->GetParameter(indice,val,eval);
+  // minuit.GetParameter(indice,val,eval);
 
 }
